@@ -6,6 +6,10 @@ class AddItem extends Component {
     super(props);
     this.state = {value: ''};
   }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
   render() {
     return (
       <div className="container">

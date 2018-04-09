@@ -6,6 +6,11 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <App />, document.getElementById('root')
+  <Router>
+    <div>
+      <Route exact path='/' component={App} />
+    </div>
+  </Router>,
+  document.getElementById('root')
 );
 registerServiceWorker();

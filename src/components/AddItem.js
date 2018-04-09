@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ItemService from './ItemService';
 
 class AddItem extends Component {
 

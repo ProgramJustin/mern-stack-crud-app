@@ -8,8 +8,14 @@ class AddItem extends Component {
   }
   render() {
     return (
-      <div>
-        <h2>Welcome to Add Item</h2>
+      <div className="container">
+        <form onSubmit={this.handSubmit}>
+          <label>
+            Add Item:
+            <input type="text" value={this.state.value} onChange={this.handleChange} className="form-control"/>
+          </label><br/>
+          <input type="submit" value="submit" className="btn btn-primary"/>
+        </form>
       </div>
     );
   }

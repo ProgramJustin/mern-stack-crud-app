@@ -10,6 +10,12 @@ class AddItem extends Component {
   handleChange(event) {
     this.setState({value: event.target.value});
   }
+
+  handleSubmit(event) {
+    alert(this.state.value);
+    event.preventDefault();
+  }
+  
   render() {
     return (
       <div className="container">

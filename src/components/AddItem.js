@@ -5,6 +5,9 @@ class AddItem extends Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -15,7 +18,7 @@ class AddItem extends Component {
     alert(this.state.value);
     event.preventDefault();
   }
-  
+
   render() {
     return (
       <div className="container">

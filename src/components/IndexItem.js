@@ -14,7 +14,7 @@ class IndexItem extends Component {
     this.addItemServcie = new ItemService();
   }
   componentDidMount(){
-    axios.get('http://localhost:4200/items');
+    axios.get('http://localhost:4200/items')
     .then(response => {
       this.setState({ items: response.data });
     })
@@ -24,7 +24,7 @@ class IndexItem extends Component {
   }
   tabRow(){
     if(this.state.items instanceof Array){
-      return tis.state.items.map(function(object, i) {
+      return this.state.items.map(function(object, i) {
         return <TableRow obj={object} key={i} />;
       })
     }

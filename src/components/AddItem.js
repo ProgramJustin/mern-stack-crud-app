@@ -10,10 +10,11 @@ class AddItem extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    console.log(ItemService);
   }
-
   handleChange(event) {
     this.setState({value: event.target.value});
+    console.log(this.state);
   }
 
   handleSubmit(event) {
